@@ -1,9 +1,9 @@
-# next13 template
+# nextjs template (/app)
 
 To get started:
 
 ```
-cd next13-template
+cd nextjs-template
 pnpm install
 pnpm dev
 ```
