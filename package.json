@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "format": "prettier --write **/*.{js,jsx,ts,tsx,json,md,mdx,html,css,scss,cjs,mjs}"
+    "format": "prettier --write **/*.{js,jsx,ts,tsx,json,md,mdx,html,css,scss,cjs,mjs}",
+    "typecheck": "tsc --noEmit"
   },
   "dependencies": {
     "next": "^13.4.1",
