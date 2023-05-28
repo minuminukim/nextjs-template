@@ -2,8 +2,8 @@ import { Inter } from 'next/font/google';
 import type { ReactNode } from 'react';
 
 export const metadata = {
-  title: 'next13-template',
-  description: 'next13-template',
+  title: 'nextjs-template',
+  description: 'nextjs-template',
 };
 
 const inter = Inter({ subsets: ['latin'] });
