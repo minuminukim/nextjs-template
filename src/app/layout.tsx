@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google';
 import { cn } from '~/lib/cn';
-import { ThemeProvider } from '~/components/theme-provider';
+import { ThemeProvider } from '~/ui/ThemeProvider';
 import '~/styles/globals.css';
 
 export const metadata = {
@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'min-h-screen bg-background font-sans text-foreground antialiased',
+          'min-h-screen p-8 font-sans antialiased',
           inter.className
         )}
       >

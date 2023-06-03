@@ -4,51 +4,74 @@
 
 @layer base {
   :root {
-    --background: 0 0% 98%;
-    --foreground: 0 0% 4%;
+    --background: 0 0% 99.0%;
+    --foreground: 0 0% 9.0%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 9%;
+    --primary: 0 0% 9.0%;
+    --primary-foreground: 0 0% 99.0%;
+    --primary-hover: 0 0% 43.5%;
 
-    --tertiary: 0 0% 90%;
-    --tertiary-foreground: 0 0% 15%;
+    --secondary: 0 0% 95.1%;
+    --secondary-foreground: 0 0% 9.0%;
+    --secondary-hover: 0 0% 93.0%;
+    --secondary-active: 0 0% 90.9%;
 
-    --border: 0 0% 45%;
-    --border-muted: 210 18% 87%;
-    --border-subtle: 213 13% 14%;
+    --muted: 0 0% 11.0%;
+    --muted-foreground: 0 0% 62.8%;
 
-    --accent: 214 95% 93%;
-    --accent-emphasis: 217 91% 60%;
+    --border: 0 0% 85.8%;
+    --border-emphasis: 0 0% 78.0%;
+    --border-subtle: 0 0% 88.7%;
 
     --success: 141 84% 93%;
     --success-emphasis: 142 71% 45%;
 
     --attention: 55 97% 88%;
 
-    --danger: 0 93% 94%;
-    --danger-emphasis: 0 84% 60%;
+    --warning: 359 100% 99.4%;
+    --warning-foreground: 358 65.0% 48.7%;
+    --warning-border: 359 74.2% 81.7%;
+    --warning-emphasis: 359 69.5% 74.3%;
   }
 
   .dark {
-    --foreground: 0 0% 96%;
-    --background: 0 0% 4%;
+    --background: 0 0% 8.5%;
+    --foreground: 0 0% 93.0%;
 
-    --secondary: 0 0% 9%;
-    --secondary-foreground: 0 0% 90%;
+    --primary: 0 0% 93.0%;
+    --primary-hover: 0 0% 62.8%;
+    --primary-foreground: 0 0% 8.5%;
 
-    --tertiary: 0 0% 15%;
-    --tertiary-foreground: 0 0% 83%;
+    --secondary: 0 0% 13.6%;
+    --secondary-foreground: 0 0% 93.0%;
+    --secondary-hover: 0 0% 15.8%;
+    --secondary-active: 0 0% 17.9%;
 
-    --accent: 226 57% 21%;
-    --accent-emphasis: 217 91% 60%;
+    --border: 0 0% 24.3%;
+    --border-subtle: 0 0% 20.5%;
+    --border-hover: 0 0% 31.2%;
 
-    --success: 145 80% 10%;
-    --success-emphasis: 142 76% 36%;
+    --muted: 0 0% 9%;
+    --muted-foreground: 0 0% 90%;
+
+    --success: 141.9 69.2% 58%;
+    --success-emphasis: 141.7 76.6% 73.1%;
 
     --attention: 26 83% 14%;
     --attention-emphasis: 35 92% 33%;
 
-    --danger: 0 75% 15%;
-    --danger-emphasis: 0 72% 51%;
+    --warning: 353 23.0% 9.8%;
+    --warning-foreground: 358 100% 69.5%;
+    --warning-border: 357 60.2% 31.8%;
+    --warning-emphasis: 358 65.0% 40.4%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
   }
 }
