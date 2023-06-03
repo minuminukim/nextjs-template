@@ -2,6 +2,7 @@ import { type Config } from 'tailwindcss';
 
 export default {
   content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  plugins: [],
   theme: {
     extend: {
       colors: {
@@ -17,21 +18,9 @@ export default {
         'accent-emphasis': 'hsl(var(--accent-emphasis))',
         success: 'hsl(var(--success))',
         'success-emphasis': 'hsl(var(--success-emphasis))',
+        danger: 'hsl(var(--danger))',
+        'danger-emphasis': 'hsl(var(--danger-emphasis))',
       },
     },
-    fontSize: {
-      xs: '0.75rem',
-      sm: '0.875rem',
-      base: '1rem',
-      xl: '1.25rem',
-      '2xl': '2rem',
-      '4xl': '3.5rem',
-    },
-    fontWeight: {
-      normal: '400',
-      medium: '500',
-      semibold: '600',
-    },
   },
-  plugins: [],
 } satisfies Config;

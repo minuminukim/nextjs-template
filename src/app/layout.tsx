@@ -1,5 +1,6 @@
 import { Inter } from 'next/font/google';
-import clsx from 'clsx';
+import { cn } from '~/lib/cn';
+import { ThemeProvider } from '~/components/theme-provider';
 import '~/styles/globals.css';
 
 export const metadata = {
@@ -20,14 +21,16 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={clsx(
+        className={cn(
           'min-h-screen bg-background font-sans text-foreground antialiased',
           inter.className
         )}
       >
-        {children}
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
