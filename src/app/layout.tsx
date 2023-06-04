@@ -2,14 +2,13 @@ import { Inter } from 'next/font/google';
 import { cn } from '~/lib/cn';
 import { ThemeProvider } from '~/ui/ThemeProvider';
 import '~/styles/globals.css';
+import { SessionProvider } from './SessionProvider';
 
 export const metadata = {
   title: 'nextjs-template',
   description: 'nextjs-template',
   icons: {
     icon: '/favicon.ico',
-    shortcut: '/favicon-16x16.png',
-    apple: '/apple-touch-icon.png',
   },
 };
 
@@ -29,7 +28,7 @@ export default function RootLayout({
         )}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          {children}
+          <SessionProvider>{children}</SessionProvider>
         </ThemeProvider>
       </body>
     </html>
