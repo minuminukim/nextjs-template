@@ -9,7 +9,8 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write **/*.{js,jsx,ts,tsx,json,md,mdx,html,css,scss,cjs,mjs}",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "db:push": "prixma db push"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.0.2",
