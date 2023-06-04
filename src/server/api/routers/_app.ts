@@ -23,7 +23,7 @@ export const appRouter = createTRPCRouter({
       })
     )
     .query(async (opts) => {
-      console.log('request from', opts.ctx.headers?.['x-trpc-source']);
+      console.log('request from', opts.ctx.headers.get('x-trpc-source'));
       return `hello ${opts.input.text}`;
     }),
 
