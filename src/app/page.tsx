@@ -1,6 +1,5 @@
 import { Suspense } from 'react';
 import { ThemeSwitch } from '~/ui/ThemeSwitch';
-import { Counter } from './components/counter';
 import { ClientGreeting } from './components/ClientGreeting';
 import { ServerGreeting } from './components/ServerGreeting';
 import { api } from '~/trpc/server';
@@ -16,7 +15,6 @@ export default async function Page() {
       <ThemeSwitch />
       <div className="my-4 ">
         <h1 className="text-4xl">Hello, next.js</h1>
-        <Counter />
       </div>
       <>
         <div>

@@ -1,5 +1,5 @@
 import { z } from 'zod';
-import { publicProcedure, createTRPCRouter } from '~/server/api/trpc';
+import { publicProcedure, createRouter } from '~/server/api/trpc';
 
 export const createPost = publicProcedure
   .input(
@@ -15,7 +15,7 @@ export const createPost = publicProcedure
     };
   });
 
-export const appRouter = createTRPCRouter({
+export const appRouter = createRouter({
   greeting: publicProcedure
     .input(
       z.object({
