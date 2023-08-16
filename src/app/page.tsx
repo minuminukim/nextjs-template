@@ -1,10 +1,10 @@
-import { Suspense } from 'react';
-import { ThemeSwitch } from '~/components/theme-switch';
+import { Suspense } from "react";
+import { ThemeSwitch } from "~/components/theme-switch";
 
 export default async function Page() {
   const promise = new Promise<string>(async (resolve) => {
     await new Promise((r) => setTimeout(r, 1000)); // wait for demo purposes
-    resolve('streamed server data');
+    resolve("streamed server data");
   });
 
   return (

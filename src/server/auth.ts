@@ -1,9 +1,9 @@
-import { type NextAuthOptions, type DefaultSession } from 'next-auth';
-import { getServerSession as $getServerSession } from 'next-auth';
-import { PrismaAdapter } from '@next-auth/prisma-adapter';
-import GithubProvider from 'next-auth/providers/github';
+import { type NextAuthOptions, type DefaultSession } from "next-auth";
+import { getServerSession as $getServerSession } from "next-auth";
+import { PrismaAdapter } from "@next-auth/prisma-adapter";
+import GithubProvider from "next-auth/providers/github";
 
-import { prisma } from '~/server/db';
+import { prisma } from "~/server/db";
 
 /**
  * Module augmentation for `next-auth` types. Allows us to add custom properties to the `session`
@@ -11,13 +11,13 @@ import { prisma } from '~/server/db';
  *
  * @see https://next-auth.js.org/getting-started/typescript#module-augmentation
  */
-declare module 'next-auth' {
+declare module "next-auth" {
   interface Session extends DefaultSession {
     user: {
       id: string;
       // ...other properties
       // role: UserRole;
-    } & DefaultSession['user'];
+    } & DefaultSession["user"];
   }
 }
 
