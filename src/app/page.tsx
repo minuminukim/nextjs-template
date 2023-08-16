@@ -1,5 +1,5 @@
 import { Suspense } from 'react';
-import { ThemeSwitch } from '~/ui/ThemeSwitch';
+import { ThemeSwitch } from '~/components/theme-switch';
 
 export default async function Page() {
   const promise = new Promise<string>(async (resolve) => {

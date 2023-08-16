@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { getServerSession } from '~/server/auth';
-import { button } from '~/ui/components/Button';
+import { button } from '~/ui/button';
 import { cn } from '~/lib/cn';
 
 export const metadata: Metadata = {

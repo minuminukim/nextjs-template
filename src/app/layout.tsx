@@ -1,8 +1,8 @@
+import '~/styles/globals.css';
 import { Inter } from 'next/font/google';
 import { cn } from '~/lib/cn';
-import { ThemeProvider } from '~/ui/ThemeProvider';
-import '~/styles/globals.css';
-import { SessionProvider } from './SessionProvider';
+import { ThemeProvider } from '~/components/theme-provider';
+import { SessionProvider } from '~/components/session-provider';
 
 export const metadata = {
   title: 'nextjs-template',
