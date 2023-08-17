@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import { ThemeSwitch } from "~/components/theme-switch";
 
 export default async function Page() {
   const promise = new Promise<string>(async (resolve) => {
@@ -9,7 +8,6 @@ export default async function Page() {
 
   return (
     <main className="h-full">
-      <ThemeSwitch />
       <div className="my-4 ">
         <h1 className="text-4xl">Hello, next.js</h1>
       </div>

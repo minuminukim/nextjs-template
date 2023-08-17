@@ -33,38 +33,6 @@
     --warning-border: 359 74.2% 81.7%;
     --warning-emphasis: 359 69.5% 74.3%;
   }
-
-  .dark {
-    --background: 0 0% 8.5%;
-    --foreground: 0 0% 93%;
-
-    --primary: 0 0% 93%;
-    --primary-hover: 0 0% 62.8%;
-    --primary-foreground: 0 0% 8.5%;
-
-    --secondary: 0 0% 13.6%;
-    --secondary-foreground: 0 0% 93%;
-    --secondary-hover: 0 0% 15.8%;
-    --secondary-active: 0 0% 17.9%;
-
-    --border: 0 0% 24.3%;
-    --border-subtle: 0 0% 20.5%;
-    --border-hover: 0 0% 31.2%;
-
-    --muted: 0 0% 9%;
-    --muted-foreground: 0 0% 90%;
-
-    --success: 141.9 69.2% 58%;
-    --success-emphasis: 141.7 76.6% 73.1%;
-
-    --attention: 26 83% 14%;
-    --attention-emphasis: 35 92% 33%;
-
-    --warning: 353 23% 9.8%;
-    --warning-foreground: 358 100% 69.5%;
-    --warning-border: 357 60.2% 31.8%;
-    --warning-emphasis: 358 65% 40.4%;
-  }
 }
 
 @layer base {

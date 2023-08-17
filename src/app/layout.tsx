@@ -1,7 +1,6 @@
 import "~/styles/globals.css";
 import { Inter } from "next/font/google";
 import { cn } from "~/lib/cn";
-import { ThemeProvider } from "~/components/theme-provider";
 import { SessionProvider } from "~/components/session-provider";
 
 export const metadata = {
@@ -27,9 +26,7 @@ export default function RootLayout({
           inter.className
         )}
       >
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <SessionProvider>{children}</SessionProvider>
-        </ThemeProvider>
+        <SessionProvider>{children}</SessionProvider>
       </body>
     </html>
   );
