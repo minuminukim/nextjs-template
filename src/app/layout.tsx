@@ -1,18 +1,18 @@
-import { Inter } from 'next/font/google';
-import { cn } from '~/lib/cn';
-import { ThemeProvider } from '~/ui/ThemeProvider';
-import '~/styles/globals.css';
-import { SessionProvider } from './SessionProvider';
+import "~/styles/globals.css";
+import { Inter } from "next/font/google";
+import { cn } from "~/lib/cn";
+import { ThemeProvider } from "~/components/theme-provider";
+import { SessionProvider } from "~/components/session-provider";
 
 export const metadata = {
-  title: 'nextjs-template',
-  description: 'nextjs-template',
+  title: "nextjs-template",
+  description: "nextjs-template",
   icons: {
-    icon: '/favicon.ico',
+    icon: "/favicon.ico",
   },
 };
 
-const inter = Inter({ subsets: ['latin'] });
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
   children,
@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <body
         className={cn(
-          'min-h-screen p-8 font-sans antialiased',
+          "min-h-screen p-8 font-sans antialiased",
           inter.className
         )}
       >

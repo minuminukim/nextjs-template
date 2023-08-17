@@ -4,23 +4,23 @@
 
 @layer base {
   :root {
-    --background: 0 0% 99.0%;
-    --foreground: 0 0% 9.0%;
+    --background: 0 0% 99%;
+    --foreground: 0 0% 9%;
 
-    --primary: 0 0% 9.0%;
-    --primary-foreground: 0 0% 99.0%;
+    --primary: 0 0% 9%;
+    --primary-foreground: 0 0% 99%;
     --primary-hover: 0 0% 43.5%;
 
     --secondary: 0 0% 95.1%;
-    --secondary-foreground: 0 0% 9.0%;
-    --secondary-hover: 0 0% 93.0%;
+    --secondary-foreground: 0 0% 9%;
+    --secondary-hover: 0 0% 93%;
     --secondary-active: 0 0% 90.9%;
 
-    --muted: 0 0% 11.0%;
+    --muted: 0 0% 11%;
     --muted-foreground: 0 0% 62.8%;
 
     --border: 0 0% 85.8%;
-    --border-emphasis: 0 0% 78.0%;
+    --border-emphasis: 0 0% 78%;
     --border-subtle: 0 0% 88.7%;
 
     --success: 141 84% 93%;
@@ -29,21 +29,21 @@
     --attention: 55 97% 88%;
 
     --warning: 359 100% 99.4%;
-    --warning-foreground: 358 65.0% 48.7%;
+    --warning-foreground: 358 65% 48.7%;
     --warning-border: 359 74.2% 81.7%;
     --warning-emphasis: 359 69.5% 74.3%;
   }
 
   .dark {
     --background: 0 0% 8.5%;
-    --foreground: 0 0% 93.0%;
+    --foreground: 0 0% 93%;
 
-    --primary: 0 0% 93.0%;
+    --primary: 0 0% 93%;
     --primary-hover: 0 0% 62.8%;
     --primary-foreground: 0 0% 8.5%;
 
     --secondary: 0 0% 13.6%;
-    --secondary-foreground: 0 0% 93.0%;
+    --secondary-foreground: 0 0% 93%;
     --secondary-hover: 0 0% 15.8%;
     --secondary-active: 0 0% 17.9%;
 
@@ -60,10 +60,10 @@
     --attention: 26 83% 14%;
     --attention-emphasis: 35 92% 33%;
 
-    --warning: 353 23.0% 9.8%;
+    --warning: 353 23% 9.8%;
     --warning-foreground: 358 100% 69.5%;
     --warning-border: 357 60.2% 31.8%;
-    --warning-emphasis: 358 65.0% 40.4%;
+    --warning-emphasis: 358 65% 40.4%;
   }
 }
 
